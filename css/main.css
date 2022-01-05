@@ -1,0 +1,145 @@
+body{
+    font-family: arial;
+    margin: 0;
+}
+#wrapper{
+    width: 980px;
+    margin: 0 auto;
+    background: #fff;
+}
+a{
+    color: chocolate;
+    text-decoration: none;
+}
+.wrapper{
+display:grid;
+grid-template-columns: 32% 32% 32%;
+grid-gap: 1em;
+grid-auto-rows: minmax(100px auto);
+}
+
+.nested{
+  display:grid;
+  grid-template-columns: 32% 32% 32%;
+  grid-auto-rows: 70px;
+  grid-gap: 1em;
+}
+.wrapper > div{
+    background: #eee; 
+    border-radius: 10px;
+    padding: 1em;
+    margin: 2px; 
+}
+
+.wrapper > div:nth-child(odd){
+    background: #ddd; 
+    border-radius: 10px;
+    margin: 2px;
+}
+
+/*.nested > div{
+border: #333 1px solid;
+padding:1em;
+
+} */
+h5{
+    color: whitesmoke;
+}
+
+#main-navigation{
+    background: darkgray;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 2px;
+}
+
+#main-navigation-Phones a{
+    text-align: center;
+}
+
+#main-navigation ul{
+    text-align: left;
+    list-style-type: none;
+    margin-right: 10px;
+}
+
+#main-navigation li{
+display: inline-block;
+margin-left: 20px;
+
+}
+
+#main-navigation a{
+color: #fff;
+background: #8f746c;
+border-radius: 30px;
+display: inline-block;
+text-decoration: none;
+text-transform: uppercase;
+font-size: 14px;
+margin-bottom: 10px;
+padding: 6px;
+}
+
+#main-navigation a.current{
+background: #8f746c;
+border-radius: 30px;
+}
+
+#lead-banner img{
+    width: 100%;  
+    border-radius: 20px;
+    margin-top: 5px;
+}
+
+#footer-banner{
+    width: 100%;
+    margin-top: 2px;
+    
+}
+p{
+    text-align: center;
+}
+#shop{
+margin: 30px 0;
+text-align: left;
+}
+
+#shop h2.product-name{
+font-size: 16px;
+margin-bottom: 0;
+text-align: left;
+}
+
+#shop span.price{
+    font-size: 16px;
+    display: block;
+    text-align: left;
+}
+
+#shop span.Brand{
+    font-size: 16px;
+    display: block;
+    text-align: left;
+}
+
+#shop a.add-to-chart{
+display: block;
+color: #8f746c;
+text-align: center;
+text-transform: uppercase;
+font-size: 12px;
+text-decoration: none;
+padding: 10px 0px;
+border: 2px solid #8f746c;
+width: 210px;
+margin: 20px;
+
+
+}
+#shop a.add-to-chart:hover{
+background: chocolate;
+color: #fff;
+
+}
+
